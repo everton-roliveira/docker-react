@@ -1,7 +1,8 @@
-import { Grid } from '@material-ui/core';
+import { Grid, createMuiTheme, Card, CardContent } from '@material-ui/core';
 import * as React from "react";
 import Widget from "./components/Dashboard/Widget";
 import MenuBar from './components/UI/header/MenuBar';
+import TableLastProducts from './components/Dashboard/TableLastProduct/TableLastProducts';
 
 export interface HelloProps { compiler: string; framework: string; }
 
@@ -11,12 +12,12 @@ export default class App extends React.Component<{}, {}> {
   render() {
     return (
       <MenuBar>
-        <Grid container spacing={3}>
+        <Grid container spacing={3} alignItems="center">
           <Grid item xs={12} md={6}>
-            <Widget value={47} element="Vendas"></Widget>
+            <TableLastProducts></TableLastProducts>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Grid container spacing={3}>
+            <Grid container spacing={3} alignItems="center">
               <Grid item xs={12} md={6}>
                 <Widget value={178} element="Pedidos"></Widget>
               </Grid>
