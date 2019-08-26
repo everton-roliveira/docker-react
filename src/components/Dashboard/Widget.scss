@@ -1,0 +1,16 @@
+.card-widget {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  .card-content {
+      text-align: center;
+      .value {
+          font-size: 40px;
+          font-weight: bold;
+      }
+      .element {
+          color: #afafaf;
+      }
+  }
+}
